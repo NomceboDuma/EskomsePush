@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9PV-7z-IAN">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EskomSePushloadshedding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="Rtu-3m-e10"/>
+                    <navigationItem key="navigationItem" id="MoO-ke-gy4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1392" y="-115"/>
+        </scene>
+        <!--Add Area-->
+        <scene sceneID="dyG-u6-Fzy">
+            <objects>
+                <viewController id="x3g-7H-6IR" customClass="ViewController2" customModule="EskomSePushloadshedding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EPE-6G-aoU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rfz-eP-32l">
+                                <rect key="frame" x="129" y="181.66666666666666" width="135" height="43.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Add">
+                                            <attributes>
+                                                <font key="NSFont" size="25" name="Herculanum"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <searchBar contentMode="redraw" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="1r8-jZ-LeM">
+                                <rect key="frame" x="0.0" y="89" width="393" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="x3g-7H-6IR" id="ybZ-hY-LE1"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ORn-3o-FiY"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rfz-eP-32l" firstAttribute="top" secondItem="1r8-jZ-LeM" secondAttribute="bottom" constant="48.670000000000002" id="3wN-d9-EP5"/>
+                            <constraint firstItem="1r8-jZ-LeM" firstAttribute="top" secondItem="ORn-3o-FiY" secondAttribute="top" constant="30" id="ABz-He-nJw"/>
+                            <constraint firstItem="ORn-3o-FiY" firstAttribute="bottom" secondItem="Rfz-eP-32l" secondAttribute="bottom" constant="544" id="Cjl-0J-Wvh"/>
+                            <constraint firstItem="Rfz-eP-32l" firstAttribute="top" secondItem="1r8-jZ-LeM" secondAttribute="bottom" constant="48.670000000000002" id="L02-hQ-NcN"/>
+                            <constraint firstItem="1r8-jZ-LeM" firstAttribute="top" secondItem="ORn-3o-FiY" secondAttribute="top" constant="30" id="M8B-Kb-Bps"/>
+                            <constraint firstItem="1r8-jZ-LeM" firstAttribute="leading" secondItem="ORn-3o-FiY" secondAttribute="leading" id="ed2-Sc-jRl"/>
+                            <constraint firstItem="1r8-jZ-LeM" firstAttribute="leading" secondItem="ORn-3o-FiY" secondAttribute="leading" id="fjl-r2-7Cb"/>
+                            <constraint firstItem="Rfz-eP-32l" firstAttribute="leading" secondItem="ORn-3o-FiY" secondAttribute="leading" constant="129" id="jDf-fu-86t"/>
+                            <constraint firstItem="1r8-jZ-LeM" firstAttribute="trailing" secondItem="ORn-3o-FiY" secondAttribute="trailing" id="q75-d5-T0o"/>
+                            <constraint firstItem="ORn-3o-FiY" firstAttribute="trailing" secondItem="Rfz-eP-32l" secondAttribute="trailing" constant="129" id="rZc-sl-dMY"/>
+                            <constraint firstItem="1r8-jZ-LeM" firstAttribute="trailing" secondItem="ORn-3o-FiY" secondAttribute="trailing" id="yvD-RW-23e"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add Area" image="plus" catalog="system" id="WOC-HU-SGI"/>
+                    <connections>
+                        <outlet property="AddButton" destination="Rfz-eP-32l" id="ajP-LV-Dlf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1TY-G2-yY8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-593.12977099236639" y="-115.49295774647888"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="x4g-Is-9DM">
+            <objects>
+                <tabBarController id="9PV-7z-IAN" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EBP-rr-ajF">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Foj-gu-1Hf"/>
+                        <segue destination="x3g-7H-6IR" kind="relationship" relationship="viewControllers" id="e89-E5-tA5"/>
+                        <segue destination="pk0-zc-QB1" kind="relationship" relationship="viewControllers" id="EIh-e8-976"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hNR-q8-KRV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-654" y="-857"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="D8g-KV-VF2">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="O2W-Oh-dhd" customClass="DetailViewController" customModule="EskomSePushloadshedding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VEt-1w-DIQ" customClass="de">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="0ks-1R-l17"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zwc-dm-tX9"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" id="7u2-3I-3tL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xZX-QL-ECb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1578" y="-880"/>
+        </scene>
+        <!--more-->
+        <scene sceneID="irr-d1-kSh">
+            <objects>
+                <viewController id="pk0-zc-QB1" customClass="ViewController3" customModule="EskomSePushloadshedding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kEc-fc-9zW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="oeC-Vs-sXU"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="more" image="list.bullet" catalog="system" id="fHf-WE-v8p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LHQ-jn-TuV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="189" y="-115"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="7u2-3I-3tL"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="list.bullet" catalog="system" width="128" height="87"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
